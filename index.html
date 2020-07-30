@@ -100,7 +100,7 @@
       const naranja = document.getElementById('naranja')
       const verde = document.getElementById('verde')
       const btnEmpezar = document.getElementById('btnEmpezar')
-      const ULTIMO_NIVEL = 10
+      const ULTIMO_NIVEL = 15
       
   
       var playerName = prompt(`¿Quién va a jugar?^^`);
@@ -126,7 +126,7 @@ Swal.mixin({
     title: 'Observa bien la secuencia de colores, y repítela',
     text: `Te enseño como jugar ${playerName} (/^_^)/`
   },
-  'Hay 10 niveles. Cada nivel acumula la secuencia anterior',
+  `Hay ${ULTIMO_NIVEL} niveles. Cada nivel acumula la secuencia anterior`,
   'Un missClick te puede hacer perder, ten cuidado'
 ]).then((result) => {
   if (result.value) {
